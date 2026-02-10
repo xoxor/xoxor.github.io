@@ -1,0 +1,130 @@
+/* ------------------------------------------ */
+/* GLOBAL BODY STYLES */
+/* ------------------------------------------ */
+body {
+  font-family: 'Lora', serif; /* elegant, readable font for body */
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333; /* soft dark gray for readability */
+}
+
+
+/* ------------------------------------------ */
+/* HEADINGS STYLING */
+/* ------------------------------------------ */
+
+/* H3 for sub-sections */
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 550;
+  color: #333; /* medium gray */
+  font-size: 1.6rem;
+  margin-top: 35px;
+  margin-bottom: -5px;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 550;
+  color: #333; /* medium gray */
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: -5px;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 550;
+  color: #585858; /* medium gray */
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: -5px;
+}
+
+/* ------------------------------------------ */
+/* HORIZONTAL RULES */
+/* ------------------------------------------ */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #eee, #2a9d8f, #eee);
+  margin: 40px 0;
+}
+
+hr.short {
+  width: 50%;
+  margin: 30px auto;
+}
+
+/* ------------------------------------------ */
+/* PARAGRAPHS & LISTS */
+/* ------------------------------------------ */
+p {
+  margin-bottom: 25px;
+}
+
+ul, ol {
+  margin-bottom: 0px;
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: -5px;
+}
+
+/* ------------------------------------------ */
+/* IMAGES IN POSTS */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px; /* soft rounded corners */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ------------------------------------------ */
+/* BLOCKQUOTES */
+blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #888; /* gray left border */
+  padding-left: 20px;
+  margin: 30px 0;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* ------------------------------------------ */
+/* CODE BLOCKS */
+pre, code {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+pre {
+  padding: 15px;
+  overflow-x: auto;
+  margin-bottom: 25px;
+}
+
+/* ------------------------------------------ */
+/* TABLES */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+  font-weight: 600;
+}
