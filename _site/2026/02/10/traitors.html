@@ -73,7 +73,7 @@
               <a href="#">Beatrice Napolitano</a>
               on February 10, 2026 &middot; <span class="reading-time" title="Estimated read time">
   
-   13 mins  read </span>
+   14 mins  read </span>
 
             </span>
           </div>
@@ -86,67 +86,84 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
-        <p style="text-align:justify">Picture this: a night on the sofa, wrapped in a warm blanket, ready to watch the new episodes of <em>The
+        <p style="text-align:justify">Picture this: a night on the sofa, wrapped in a warm blanket, ready to watch the new
+    episodes of <em>The
         Traitors</em>. The round table arrives, tensions rise, and then you hear it: <em>“it’s not personal”</em>.
-        If you opened this article, chances are you’re familiar with the show, which means you’ve heard this line more times
+    If you opened this article, chances are you’re familiar with the show, which means you’ve heard this line more times
     than you can count (possibly second only to <em>“omg, they played a blinder”</em>).
-Don’t get me wrong, I think, for the most part, that’s true. Especially early in the game, there’s very little
+    <span class="note">If not, you might want to pause here and binge all seasons before continuing.</span>
+    Don’t get me wrong, I think, for the most part, that’s true. Especially early in the game, there’s very little
     genuine animosity. People aren’t voting out of spite or revenge, they simply have to put a name down and they don’t
     yet have much to go on. No one’s slipped up, no big mistakes, and yet, somehow, certain people are already
-    <em>“giving traitor energy”</em>.</p>
+    <em>“giving traitor energy”</em>.
+</p>
 
-<p style="text-align:justify">Still, “not personal” doesn’t necessarily mean neutral. When decisions are made on instinct, what feels like a
+<p style="text-align:justify">Still, “not personal” doesn’t necessarily mean neutral. When decisions are made on
+    instinct, what feels like a
     harmless gut feeling can quietly follow familiar social patterns.</p>
 
-<p style="text-align:justify">A lot of viewers picked up on this feeling, and eventually <em>The Times</em> did too. They recently published a
+<p style="text-align:justify">A lot of viewers picked up on this feeling, and eventually <em>The Times</em> did too.
+    They recently published a
     <a href="https://www.thetimes.com/uk/media/article/the-traitors-bias-race-gender-9m8t8mx2v">thoughtful piece</a>
     exploring whether players on <em>The Traitors</em> might be influenced by prejudice, particularly
     around race, gender, and age. I appreciated that they took these concerns seriously and that they looked at the
-    data. Also, the article prompted further discussion elsewhere, which helped raise awareness and open up a broader debate.
+    data. Also, the article prompted further discussion elsewhere, which helped raise awareness and open up a broader
+    debate.
 </p>
 
-<p style="text-align:justify">Reading it pushed me to dig a little deeper myself. I wasn’t entirely convinced by some of the methodological choices
+<p style="text-align:justify">Reading it pushed me to dig a little deeper myself. I wasn’t entirely convinced by some of
+    the methodological choices
     made, and I kept wondering what the data might say if approached slightly differently.
     But before getting into the results, I want to explain the intuition behind my choices and lay out a few important
     premises.</p>
 
-<hr>    
+<hr>
 <h4>Premises</h4>
-<p style="text-align:justify">We need to keep in mind that <em>The Traitors</em> is, first and foremost, a <b>reality TV show</b>. As viewers at home, we
+<p style="text-align:justify">We need to keep in mind that <em>The Traitors</em> is, first and foremost, a <b>reality TV
+        show</b>. As viewers at home, we
     see only a small, and heavily edited, slice of what actually happens. Context is missing, conversations are
-    compressed, and some moments may even be “shaped” for narrative effect. This analysis is therefore based solely on
+    compressed, and some moments may even be “shaped” for narrative effect. This analysis is based solely on
     what is visible on screen. It is not, in any way, intended as a judgment of individual players or their personal
     behavior.</p>
 
-<p style="text-align:justify"> <b>Public Tool:</b> To keep the process transparent and fun, I’ve made the data-analysis tool publicly available, so you can explore the
+<p style="text-align:justify"> <b>Public Tool:</b> To keep the process transparent and fun, I’ve made the data-analysis
+    tool publicly available, so you can explore and play with the
     data yourself <a href="https://thetraitors.streamlit.app/">here</a>.</p>
 
-<p style="text-align:justify">Gender and racial data were inferred using AI-based name analysis and may not reflect how contestants self-identify.
+<p style="text-align:justify">Gender and racial data were inferred using AI-based name analysis and may not reflect how
+    contestants self-identify.
     Where possible, I cross-referenced these inferences with publicly available self-identification data, but
-    inaccuracies are still possible.For the purposes of this analysis, the term People of Color is used to mean non-white, in line with the <a
+    inaccuracies are still possible. For the purposes of this analysis, the term People of Color is used to mean
+    non-white, in line with the <a
         href="https://apastyle.apa.org/style-grammar-guidelines/bias-free-language/racial-ethnic-minorities">APA Style
-        guidelines</a> on bias-free language.This was a personally challenging exercise, and I genuinely welcome corrections or suggestions to improve accuracy.
+        guidelines</a> on bias-free language. This was a personally challenging exercise, and I genuinely welcome
+    corrections or suggestions to improve accuracy.
     Full datasets and code are also available on <a href="https://github.com/xoxor/theTraitors">GitHub</a>.</p>
 
+<hr class="short">
 <h4>Banishment vs Murder</h4>
 
-<p style="text-align:justify">The first thing that didn’t quite sit right with me was treating murders and banishments as the same kind of event.
+<p style="text-align:justify">The first thing that didn’t quite sit right with me was treating murders and banishments
+    as the same kind of event.
     Murders are strategic decisions made by the Traitors behind closed doors. Banishments, especially early ones, are
     public, rushed, and based on very little information. Those first round tables are full of people openly admitting
     they’re “going with their gut”. If unconscious bias is going to show up anywhere, that feels like the most likely
-    place. So I’d like to see if by focusing solely on banishments we get different results.</p>
+    place. So I wanted to see if by focusing solely on banishments we would get different results.</p>
 
-<h4 >Civilians vs Celebrities</h4>
+<h4>Civilians vs Celebrities</h4>
 
-<p style="text-align:justify">The second choice I wanted to revisit was the inclusion of the celebrity season. Celebrities don’t enter the game as
+<p style="text-align:justify">The second choice I wanted to revisit was the inclusion of the celebrity season.
+    Celebrities don’t enter the game as
     blank slates. They come with public personas, reputations, and sometimes existing relationships. That almost
     certainly introduces different kinds of bias but not necessarily the ones being examined here. This is also why, for
-    now, I’m focusing only on the UK version: it’s the only one with enough diversity and a cast made entirely of
+    now, I’m focusing only on the UK version of the show, as it’s the only one with enough diversity and a cast made
+    entirely of
     civilians.</p>
 
 <h4>Votes vs Banishment</h4>
 
-<p style="text-align:justify">Finally, as a huge fan of the show and someone with a PhD in preference aggregation, I couldn’t help but thinking at
+<p style="text-align:justify">Finally, as a huge fan of the show and someone with a PhD in preference aggregation, I
+    couldn’t help but thinking at
     the votes casted rather than the outcome of the round table itself. Let me explain. In the most recent season, for
     example, Amanda intensely focused on Jade from the very beginning, with very little justification. Jade made it to
     the final, but she was under suspicion the entire time. To me, that persistent targeting matters, even if it doesn’t
@@ -158,21 +175,23 @@ Don’t get me wrong, I think, for the most part, that’s true. Especially earl
 <hr>
 
 <h3>Early Banishments Analysis</h3>
-<h5 >Banishment vs Murder</h5>
+<h5>Banishment vs Murder</h5>
 <p>To test my intuition that banishments are fundamentally different from murders, I looked at banishments in the first
     four episodes (the same cutoff used by <em>The Times</em>) across all seasons, including the celebrity one.</p>
 
 <p><b>Race:</b>Players of Color make up 28.8% of the starting cast, yet account for 46.7% of early banishments.</p>
 
-<p> <b>Gender:</b> The starting cast is almost perfectly balanced by gender. Still, women make up 53.3% of early banishments. It’s not a
+<p> <b>Gender:</b> The starting cast is almost perfectly balanced by gender. Still, women make up 53.3% of early
+    banishments. It’s not a
     massive difference on its own, but combined with the race data, it suggests that early perceptions of who seems
     “trustworthy” or “expendable” may be shaped by demographic factors rather than strategy alone.</p>
 
 <figure>
-  <img src="/img/posts/traitors/early_banishment.png" alt="Early banishment by race and gender within the first four episodes of all seasons.">
-  <figcaption>
-    Figure 1. Early banishment by race and gender within the first four episodes of all seasons.
-  </figcaption>
+    <img src="/img/posts/traitors/early_banishment.png"
+        alt="Early banishment by race and gender within the first four episodes of all seasons.">
+    <figcaption>
+        Figure 1. Early banishment by race and gender within the first four episodes of all seasons.
+    </figcaption>
 </figure>
 
 <p>Interestingly, even when looking only at banishments, the overall patterns are very similar to those reported by
@@ -184,7 +203,7 @@ Don’t get me wrong, I think, for the most part, that’s true. Especially earl
 <hr class="short">
 
 <h3>Who Survives the Longest?</h3>
-<h5 >Civilian vs Celebrity Seasons</h5>
+<h5>Civilian vs Celebrity Seasons</h5>
 
 <p>My second concern was the inclusion of the celebrity season. Because celebrity players arrive with established public
     images, and often preexisting relationship, these factors likely dampen some forms of unconscious bias examined
@@ -201,10 +220,11 @@ Don’t get me wrong, I think, for the most part, that’s true. Especially earl
 </ul>
 
 <figure>
-  <img src="/img/posts/traitors/survival_civil.png" alt="Survival average and finalists by race and gender in civilian seasons.">
-  <figcaption>
-    Figure 2. Survival average and finalists by race and gender across all civilian seasons.
-  </figcaption>
+    <img src="/img/posts/traitors/survival_civil.png"
+        alt="Survival average and finalists by race and gender in civilian seasons.">
+    <figcaption>
+        Figure 2. Survival average and finalists by race and gender across all civilian seasons.
+    </figcaption>
 </figure>
 
 <p>In the celebrity season:</p>
@@ -215,10 +235,11 @@ Don’t get me wrong, I think, for the most part, that’s true. Especially earl
 </ul>
 
 <figure>
-  <img src="/img/posts/traitors/survival_celebrity.png" alt="Survival average and finalists by race and gender in celebrity season.">
-  <figcaption>
-    Figure 3. Survival average and finalists by race and gender in the celebrity season.
-  </figcaption>
+    <img src="/img/posts/traitors/survival_celebrity.png"
+        alt="Survival average and finalists by race and gender in celebrity season.">
+    <figcaption>
+        Figure 3. Survival average and finalists by race and gender in the celebrity season.
+    </figcaption>
 </figure>
 
 <p>This supports the hypothesis that the celebrity season does not follow the same bias patterns as civilian seasons.
@@ -238,10 +259,10 @@ Don’t get me wrong, I think, for the most part, that’s true. Especially earl
     over 5.</p>
 
 <figure>
-  <img src="/img/posts/traitors/age.png" alt="Survival age analysis across all seasons.">
-  <figcaption>
-    Figure 4. Survival age analysis across all seasons.
-  </figcaption>
+    <img src="/img/posts/traitors/age.png" alt="Survival age analysis across all seasons.">
+    <figcaption>
+        Figure 4. Survival age analysis across all seasons.
+    </figcaption>
 </figure>
 
 <p>However, because of smaller sample sizes and potential game-mechanics confounds (e.g. performance in missions), I
@@ -264,27 +285,28 @@ Don’t get me wrong, I think, for the most part, that’s true. Especially earl
     it’s smaller than the gap in banishments. Because the banishments are decided by plurality, even a relatively small
     number of concentrated votes can still have a big impact.</p>
 
- <figure>
-  <img src="/img/posts/traitors/votes.png" alt="Votes received at the first round table by race and gender for all civilian seasons.">
-  <figcaption>
-    Figure 5. Votes received at the first round table by race and gender for all civilian seasons.
-  </figcaption>
-</figure>   
+<figure>
+    <img src="/img/posts/traitors/votes.png"
+        alt="Votes received at the first round table by race and gender for all civilian seasons.">
+    <figcaption>
+        Figure 5. Votes received at the first round table by race and gender for all civilian seasons.
+    </figcaption>
+</figure>
 
 <p>Interestingly, looking at round tables two and three (extending the analysis to episode four), the gender gap in
     voting narrows, while racial disparities in targeting tend to widen. This suggests a shift in how suspicion is
     socially distributed as the game progresses.</p>
 
-<hr>    
+<hr>
 <h3>Conclusions</h3>
 
-<p>So, is it “not personal”? In the narrow sense the players mean it, probably yes. Most early decisions on <em>The
-        Traitors</em> aren’t driven by malice, vendettas, or conscious prejudice. They’re made under pressure, with
+<p>So, is it “not personal”? In the narrow sense the players mean it, probably yes. Most early decisions on aren’t
+    driven by malice, vendettas, or conscious prejudice. They’re made under pressure, with
     little information, and a strong sense that someone has to go.</p>
 
 <p>But the data suggests that “not personal” doesn’t mean “random”.</p>
 
-<p>Across civilian seasons, early banishments and voting patterns consistently fall harder on certain groups well before
+<p>Across civilian seasons, early banishments and voting patterns consistently fall harder on certain groups (mainly women and Players of Color) well before
     there is meaningful strategic information to justify those choices. When people rely on gut feelings, those
     instincts appear to draw on familiar social shortcuts about who seems suspicious, trustworthy, or expendable.</p>
 

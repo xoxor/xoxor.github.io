@@ -128,3 +128,9 @@ th {
   background-color: #eee;
   font-weight: 600;
 }
+
+.note {
+    margin: 1em 0;
+    font-style: italic;
+    color: #777; /* a nice gray */
+}
