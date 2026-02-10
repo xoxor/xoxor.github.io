@@ -69,11 +69,12 @@ p {
 ul, ol {
   margin-bottom: 0px;
   padding-left: 30px;
+  text-align: justify;
 }
 
 li {
   margin-bottom: -5px;
-   text-align: justify;
+  text-align: justify;
 }
 
 /* ------------------------------------------ */
