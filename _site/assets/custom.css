@@ -61,7 +61,7 @@ hr.short {
 /* ------------------------------------------ */
 p {
   margin-bottom: 25px;
-  text-align: justify;
+  text-align: justify !important; 
 }
 
 ul, ol {
