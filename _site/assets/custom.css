@@ -60,14 +60,10 @@ hr.short {
 /* PARAGRAPHS & LISTS */
 /* ------------------------------------------ */
 p {
-  margin-bottom: 25px !important;
-  text-align: justify !important; 
+  margin-bottom: 25px;
+  text-align: justify; 
 }
 
-.post-content p {
-    margin-bottom: 25px !important;
-    text-align: justify !important;
-}
 
 
 ul, ol {
@@ -77,6 +73,7 @@ ul, ol {
 
 li {
   margin-bottom: -5px;
+   text-align: justify;
 }
 
 /* ------------------------------------------ */
