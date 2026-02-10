@@ -131,6 +131,6 @@ th {
 
 .note {
     margin: 1em 0;
-    font-style: italic;
-    color: #888; /* a nice gray */
+    font-style: italic !important;
+    color: #888 !important; /* a nice gray */
 }
