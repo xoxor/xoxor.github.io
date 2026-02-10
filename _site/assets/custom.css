@@ -64,6 +64,12 @@ p {
   text-align: justify !important; 
 }
 
+.post-content p {
+    margin-bottom: 25px !important;
+    text-align: justify !important;
+}
+
+
 ul, ol {
   margin-bottom: 0px;
   padding-left: 30px;
