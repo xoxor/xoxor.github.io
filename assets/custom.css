@@ -60,7 +60,7 @@ hr.short {
 /* PARAGRAPHS & LISTS */
 /* ------------------------------------------ */
 p {
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
   text-align: justify !important; 
 }
 
