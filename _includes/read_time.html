@@ -1,3 +1,11 @@
 <span class="reading-time" title="Estimated read time">
+  <!-- {% assign words = include.content | number_of_words %}
+  {% if words < 270 %} 1 min {% else %} {{ words | divided_by:135 }} mins {% endif %} read </span> -->
+
+  {% if include.content contains '<!-- end_reading -->' %}
+  {% assign post_parts = include.content | split: '<!-- end_reading -->' %}
+  {% assign words = post_parts[0] | number_of_words %}
+{% else %}
   {% assign words = include.content | number_of_words %}
-  {% if words < 270 %} 1 min {% else %} {{ words | divided_by:135 }} mins {% endif %} read </span>
+{% endif %}
+{% if words < 270 %} 1 min {% else %} {{ words | divided_by:135 }} mins {% endif %} read </span>
